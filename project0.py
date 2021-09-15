@@ -1,4 +1,7 @@
 
+
+print("WEL-COME to your PersonalBank")
+
 while True:
   name = input("Enter your name: ")
   try:
