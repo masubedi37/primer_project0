@@ -1,26 +1,25 @@
 
-
-print("WEL-COME to your PersonalBank")
+print("WEL-COME to your PERSONAL-BANK")
 
 while True:
   name = input("Enter your name: ")
   try:
-    if  name.isalnum() == False:
-     print(name)
+    if not name.isalnum() == True:
+
+     print("HELLO " + name)
      break
-    
+
   except:
-    print("Invalid Input. Please Try Again")
+      print("Invalid Input. Please Try Again")
 
 while True:
     try:
-     age = int(input("Enter your age(age should be between 21 to 65): "))
-     if (age > 20) and (age <= 65):
-      print(age)
-      break
-      
+        age = int(input("Enter your age(age should be between 21 to 65): "))
+        if (age > 20) and (age <= 65):
+         print(age)
+         break
     except ValueError:
-      print("Invalid Input. Please Try Again.")
+        print('Invalid Input. Please Try Again')
 
 while True:
     try:
@@ -32,9 +31,10 @@ while True:
 
 while True:
     try:
-        credit_score = int(input("Enter your Credit Score: "))
-        print(credit_score)
-        break
+        credit_score = int(input("Enter your Credit Score(Score should be between 300 to 850): "))
+        if(credit_score > 300) and (credit_score < 850):
+         print(credit_score)
+         break
     except ValueError:
         print("Invalid Input. Please Try Again")
 while True:
