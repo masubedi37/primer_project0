@@ -23,7 +23,7 @@ while True:
 
 while True:
     try:
-        bank_st = int(input("Enter your current bank statement: "))
+        bank_st = int(input("Enter your current bank balance: "))
         print(bank_st)
         break
     except ValueError:
